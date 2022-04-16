@@ -26,37 +26,50 @@ If you want to study the source code, please download to study.
 
 ## USAGE
 ### Step 1. Install ESP-IDF.
-
 Please refer to the official ESP-IDF programming guide to install a compilation environment suitable for your computer platform.  
 URL: https://docs.espressif.com/projects/esp-idf/en/v4.2.3/esp32/get-started/index.html
 
 ### Step 2. Compile and download the project.
 1, Set up the environment variables.
+
 You can see the tip: 'idf.py build'.
+
 <img src='Picture/esp-idf.png' width='30%'/>
 
 2, Download the code file.
+
 'git clone https://github.com/Freenove/Freenove_ESP32_Dog_Firmware.git'
+
 <img src='Picture/code.png' width='30%'/>
 
 3, Go to the code file directory
+
 'cd Freenove_ESP32_Dog_Firmware'
+
 <img src='Picture/cd.png' width='30%'/>
 
 2, Compile.
+
 'idf.py build'
+
 <img src='Picture/build.png' width='30%'/>
 
 3, Download.
+
 Different computer systems may have different download commands.  
+
 Make sure you have ESP32 connected to your computer and that your computer has the CH340 driver installed.  
 
 Windows: 'idf.py -p COMx flash'
+
 MAC OS: 'idf.py -p /dev/cu.usbserial-xxxxx flash'
+
 Ubuntu: 'idf.py -p /dev/ttyUSB0 flash'
+
 <img src='Picture/flash.png' width='30%'/>
 
 4, Finish
+
 <img src='Picture/finish.png' width='30%'/>
 
 ## Support
