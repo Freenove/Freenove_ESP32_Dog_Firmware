@@ -4,14 +4,14 @@ Firmware codes for Freenove product FNK0062.
 
 > A Robot Dog Kit for ESP32.
 
-<img src='Picture/icon.png' width='30%'/>
+<img src='Picture/icon.png' width='100%'/>
 
 ## Description
 This is the source code for Freenove_Robot_Dog_Kit_for_ESP32.
 If you want to study the source code, please download to study.
-Freenove_Robot_Dog_Kit_for_ESP32's ssembly and use method, url：
->https://github.com/Freenove/Freenove_Robot_Dog_Kit_for_ESP32
 
+Freenove_Robot_Dog_Kit_for_ESP32's ssembly and use method.
+URL: [https://github.com/Freenove/Freenove_Robot_Dog_Kit_for_ESP32](https://github.com/Freenove/Freenove_Robot_Dog_Kit_for_ESP32)
 
 ### Download
 
