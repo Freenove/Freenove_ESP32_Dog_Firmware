@@ -7,8 +7,11 @@ Firmware codes for Freenove product FNK0062.
 <img src='Picture/icon.png' width='30%'/>
 
 ## Description
-This is the source code for the product named Freenove_Robot_Dog_Kit_for_ESP32.
+This is the source code for Freenove_Robot_Dog_Kit_for_ESP32.
 If you want to study the source code, please download to study.
+Freenove_Robot_Dog_Kit_for_ESP32's ssembly and use method, url：
+>https://github.com/Freenove/Freenove_Robot_Dog_Kit_for_ESP32
+
 
 ### Download
 
@@ -25,7 +28,7 @@ If you want to study the source code, please download to study.
 
 > If you meet any difficulties, please contact our support team for help.
 
-## USAGE
+## Usage
 ### Step 1. Install ESP-IDF.
 
 Please refer to the official ESP-IDF programming guide to install a compilation environment suitable for your computer platform.  
@@ -57,7 +60,7 @@ You can see the tip:
 
 <img src='Picture/build.png' width='100%'/>
 
-3, Download.
+3, Upload the bin to your Dog.
 
 Different computer systems may have different download commands.  
 
