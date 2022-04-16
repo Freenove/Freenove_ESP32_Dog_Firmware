@@ -59,7 +59,7 @@ Ubuntu: ‘idf.py -p /dev/ttyUSB0 flash’
 4, Finish
 <img src='Picture/finish.png' width='30%'/>
 
-### Support
+## Support
 
 Freenove provides free and quick customer support. Including but not limited to:
 
@@ -75,7 +75,7 @@ Please send an email to:
 
 We will reply to you within one working day.
 
-### Purchase
+## Purchase
 
 Please visit the following page to purchase our products:
 
@@ -85,7 +85,7 @@ Business customers please contact us through the following email address:
 
 [sale@freenove.com](mailto:sale@freenove.com)
 
-### Copyright
+## Copyright
 
 All the files in this repository are released under [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/).
 
@@ -97,7 +97,7 @@ You can find a copy of the license in this repository.
 Freenove brand and logo are copyright of Freenove Creative Technology Co., Ltd. Can't be used without formal permission.
 
 
-### About
+## About
 
 Freenove is an open-source electronics platform.
 
