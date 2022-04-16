@@ -1,6 +1,0 @@
-[submodule "arduino"]
-	path = ./components/arduino/
-	url = ./components/arduino/
-[submodule "esp32-camera"]
-	path = ./components/esp32-camera/
-	url = ./components/esp32-camera/
