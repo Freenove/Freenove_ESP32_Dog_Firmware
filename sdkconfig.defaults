@@ -11,7 +11,7 @@ CONFIG_ESPTOOLPY_FLASHFREQ_80M=y
 CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_240=y
 CONFIG_ESP32_DEFAULT_CPU_FREQ_240=y
 
-# Custom partition table (BLE + WiFi + Camera firmware exceeds default app size)
+# Custom partition table — Arduino Huge APP (3MB No OTA / 1MB SPIFFS)
 CONFIG_PARTITION_TABLE_CUSTOM=y
 CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions.csv"
 
