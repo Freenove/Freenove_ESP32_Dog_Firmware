@@ -20,7 +20,7 @@ URL: [https://github.com/Freenove/Freenove_Robot_Dog_Kit_for_ESP32](https://gith
 
 	运行以下命令下载本仓库的全部文件。
 
-	`git clone https://github.com/Freenove/Freenove_Robot_Dog_Kit_for_ESP32.git`
+	`git clone https://github.com/Freenove/Freenove_ESP32_Dog_Firmware.git`
 
 * **在浏览器中手动下载**
 
@@ -48,13 +48,13 @@ URL: [https://docs.espressif.com/projects/esp-idf/en/v5.5.4/esp32/get-started/in
 
 2, 下载代码。
 
->`git clone https://github.com/Freenove/Freenove_Robot_Dog_Kit_for_ESP32.git`
+>`git clone https://github.com/Freenove/Freenove_ESP32_Dog_Firmware.git`
 
 <img src='Picture/code.png' width='100%'/>
 
 3, 进入代码目录
 
->`cd Freenove_Robot_Dog_Kit_for_ESP32/Sketches/Sketch_11_Dog`
+>`cd Freenove_ESP32_Dog_Firmware`
 
 <img src='Picture/cd.png' width='100%'/>
 
