@@ -48,13 +48,13 @@ You can see the tip:
 
 2, Download the code file.
 
->`git clone https://github.com/Freenove/Freenove_Robot_Dog_Kit_for_ESP32.git`
+>`git clone https://github.com/Freenove/Freenove_ESP32_Dog_Firmware.git`
 
 <img src='Picture/code.png' width='100%'/>
 
 3, Go to the code file directory
 
->`cd Freenove_Robot_Dog_Kit_for_ESP32/Sketches/Sketch_11_Dog`
+>`cd Freenove_ESP32_Dog_Firmware`
 
 <img src='Picture/cd.png' width='100%'/>
 
