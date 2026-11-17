@@ -20,7 +20,7 @@ URL: [https://github.com/Freenove/Freenove_Robot_Dog_Kit_for_ESP32](https://gith
 
 	Run following command to download all the files in this repository.
 
-	`git clone https://github.com/Freenove/Freenove_Robot_Dog_Kit_for_ESP32.git`
+	`git clone https://github.com/Freenove/Freenove_ESP32_Dog_Firmware.git`
 
 * **Manually download in browser**
 
