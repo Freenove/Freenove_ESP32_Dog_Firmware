@@ -1,9 +1,9 @@
 /**
  * @file TaskManager.cpp
- * @author suhayl@freenove (support@freenove.com)
+ * @author zhentao lin@freenove (support@freenove.com)
  * @brief Task Manager.
- * @version v1.0.0
- * @date 2022-04-13
+ * @version v1.2.0
+ * @date 2026-11-17
  * 
  * @copyright Copyright (c) 2022. Freenove corporation.
  * 
@@ -19,6 +19,7 @@ TaskHandle_t taskHandle_Buzzered = NULL;
 TaskHandle_t taskHandle_Camera = NULL;
 TaskHandle_t taskHandle_AutoWalking = NULL;
 TaskHandle_t taskHandle_Secondary = NULL;
+TaskHandle_t taskHandle_Touch = NULL;
 
 void startTask(uint8_t t)
 {
@@ -37,7 +38,10 @@ void startTask(uint8_t t)
         // xTaskCreateUniversal(task_BatteryPowerListener, TSK_NAME_BATTERY_LISTENER, 8192, NULL, 1, &taskHandle_Power_Listener, 1);
         break;
     case TASK_SHOW_LEDS:
-        // xTaskCreateUniversal(task_showRGBLeds, TSK_NAME_SHOW_LEDS, 1024, NULL, 1, &taskHandle_Show_Leds, 1);
+        xTaskCreateUniversal(task_RGBLeds, TSK_NAME_SHOW_LEDS, 1024, NULL, 1, &taskHandle_Show_Leds, 1);
+        break;
+	case TASK_TOUCH:
+        xTaskCreateUniversal(task_Touch, TSK_NAME_TOUCH, 1024, NULL, 1, &taskHandle_Touch, 1);
         break;
     case TASK_BUZZERED:
         xTaskCreateUniversal(task_Buzzered, TSK_NAME_BUZZERED, 2048, NULL, 1, &taskHandle_Buzzered, 0);

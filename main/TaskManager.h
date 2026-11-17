@@ -1,9 +1,9 @@
 /**
  * @file TaskManager.h
- * @author suhayl@freenove (support@freenove.com)
+ * @author zhentao lin@freenove (support@freenove.com)
  * @brief Task Manager.
- * @version v1.0.0
- * @date 2022-04-13
+ * @version v1.2.0
+ * @date 2026-11-17
  * 
  * @copyright Copyright (c) 2022. Freenove corporation.
  * 
@@ -38,6 +38,7 @@
 #define TASK_CAMERA_SERVICE         5
 #define TASK_AUTO_WALKING           6
 #define TASK_SECONDRAY              7
+#define TASK_TOUCH                  8
 
 //CONFIG_FREERTOS_MAX_TASK_NAME_LEN 16
 #define TSK_NAME_COMMAND_SERVICE  "CMD_SVC"
@@ -48,6 +49,7 @@
 #define TSK_NAME_CAMERA_SERVICE	  "CAM_SVC"
 #define TSK_NAME_AUTO_WALKING	  "AUT_WK"
 #define TSK_NAME_SECONDARY	      "LOOP2"
+#define TSK_NAME_TOUCH            "TOUCH"
 
 
 #define TASK_SUSPEND                1

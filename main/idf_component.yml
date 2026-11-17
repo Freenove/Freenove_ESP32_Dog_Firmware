@@ -1,0 +1,3 @@
+dependencies:
+  espressif/arduino-esp32: "==3.3.12"
+  espressif/esp32-camera: "^2.0.13"

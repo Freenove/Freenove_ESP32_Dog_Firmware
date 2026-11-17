@@ -1,25 +1,40 @@
 idf_component_register(
-    SRCS "main.cpp"
-    "BatteryPower.cpp"
-    "BluetoothService.cpp"
-    "BuiltInLed.cpp"
-    "Buzzer.cpp"
-    "CameraService.cpp"
-    "DanceMovements.cpp"
-    "Freenove_PCA9685.cpp"
-    "MassageQueue.cpp"
-    "MessageParser.cpp"
-    "Motion.cpp"
-    "PreferencesPro.cpp"
-    "Public.cpp"
-    "RGBLED_WS2812.cpp"
-    "RobotDefinitions.cpp"
-    "TaskCommandService.cpp"
-    "TaskManager.cpp"
-    "TaskMotionService.cpp"
-    "TouchPad.cpp"
-    "UltrasonicRanging.cpp"
-    
-   
-    INCLUDE_DIRS ""
+    SRCS
+        "app_main.cpp"
+        "Sketch_11_Dog.cpp"
+        "BatteryPower.cpp"
+        "BluetoothService.cpp"
+        "BuiltInLed.cpp"
+        "Buzzer.cpp"
+        "CameraService.cpp"
+        "DanceMovements.cpp"
+        "Freenove_PCA9685.cpp"
+        "Freenove_WS2812_Lib_for_ESP32.cpp"
+        "MassageQueue.cpp"
+        "MessageParser.cpp"
+        "Motion.cpp"
+        "PreferencesPro.cpp"
+        "Public.cpp"
+        "RGBLED_WS2812.cpp"
+        "RobotDefinitions.cpp"
+        "TaskCommandService.cpp"
+        "TaskManager.cpp"
+        "TaskMotionService.cpp"
+        "TouchPad.cpp"
+        "UltrasonicRanging.cpp"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        espressif__arduino-esp32
+    PRIV_REQUIRES
+        espressif__esp32-camera
+        esp_adc
+        driver
+        esp_wifi
+        esp_netif
+        bt
+        nvs_flash
+        esp_timer
+        log
+        json
 )

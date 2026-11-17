@@ -1,9 +1,9 @@
 /**
  * @file CameraService.h
- * @author suhayl@freenove (support@freenove.com)
+ * @author zhentao lin@freenove (support@freenove.com)
  * @brief Wifi, Camera, Command Serivice.
- * @version v1.0.0
- * @date 2022-04-13
+ * @version v1.2.0
+ * @date 2026-11-17
  * 
  * @copyright Copyright (c) 2022. Freenove corporation.
  * 
@@ -81,11 +81,14 @@ public:
 	void startCameraServiceThread();
 	void startCmdServiceThread();
 
-protected:
-};
+	/** JPEG quality used by frame2jpg() when sensor outputs RGB565 (e.g. GC0308). */
+	uint8_t rgb2jpgQuality = 80;
 
-void closeSoftAP();
-void closeSoftSTA();
+protected:
+	void fillCameraPinConfig();
+	bool initCameraHardware();
+	void configureDetectedSensor();
+};
 
 extern bool isWifiConnected;
 extern CameraService cs;

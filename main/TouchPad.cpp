@@ -1,9 +1,9 @@
 /**
  * @file TouchPad.cpp
- * @author suhayl@freenove (support@freenove.com)
+ * @author zhentao lin@freenove (support@freenove.com)
  * @brief Touchpad driver and service.
- * @version v1.0.0
- * @date 2022-04-13
+ * @version v1.2.0
+ * @date 2026-11-17
  * 
  * @copyright Copyright (c) 2022. Freenove corporation.
  * 
@@ -131,4 +131,66 @@ void task_TouchPad(void *pvParameters)
     default:
         break;
     }
+}
+
+void task_Touch(void *pvParameters)
+{
+	Serial.printf("task_Touch is running...\r\n");
+	while(1)
+	{
+		switch (touchMechineStatus)
+		{
+			case 0: // Idle , Wait for the button to press.
+				if (touchPadVal)
+				{
+					t0 = millis();
+					t1 = t0;
+					touchPadVal = false;
+					touchMechineStatus = 1;
+				}
+				break;
+			case 1: // short press or long press ?
+				if (touchPadVal)
+				{
+					t1 = millis();
+					touchPadVal = false;
+				}
+				t2 = millis() - t1; // Time since the last press signal was detected
+				t3 = t1 - t0;       // calculate pressed time.
+				if (t3 > 700)       //  long pressed
+				{
+					touchMechineStatus = 3; // wait release
+				}
+				if (t2 > 50) // release time > 50, press time < 700, short press, enter short pressed state
+				{
+					touchMechineStatus = 2;
+				}
+				break;
+			case 2: // short press
+				sayHelloIndex++;
+				if (sayHelloIndex >= 5)
+					sayHelloIndex = 0;
+				touchMechineStatus = 0;
+				break;
+			case 3: // Wait for release after long press.
+				if (touchPadVal)
+				{
+					t1 = millis();
+					touchPadVal = false;
+				}
+				t2 = millis() - t1;
+				if (t2 > 50) // release time > 50
+				{
+					touchMechineStatus = 0;
+				}
+				break;
+			default:
+				break;
+		}
+	}
+}
+
+int getTouch(void)
+{
+	return touchMechineStatus;
 }
